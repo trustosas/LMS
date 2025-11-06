@@ -1,6 +1,6 @@
 # LMS
 
-A Learning Management System (LMS) built with a Python backend and a TypeScript (React) frontend.
+A Library Management System (LMS) built with a Python backend and a TypeScript (React) frontend.
 
 ## Project Structure
 
