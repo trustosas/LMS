@@ -110,7 +110,10 @@ export default function Catalog() {
         <div className="space-x-2">
           {me && <span className="text-sm text-gray-600">Signed in as <span className="font-medium">{me.username}</span> ({me.role})</span>}
           {meLoaded && isStaff ? (
-            <Link to="/borrow" className="px-3 py-2 bg-blue-600 text-white rounded">Borrow Desk</Link>
+            <>
+              <Link to="/borrow" className="px-3 py-2 bg-blue-600 text-white rounded">Borrow Desk</Link>
+              <Link to="/reports" className="px-3 py-2 bg-purple-600 text-white rounded">Reports</Link>
+            </>
           ) : null}
           <button onClick={()=>{logout(); location.href='/login'}} className="px-3 py-2 border rounded">Logout</button>
         </div>

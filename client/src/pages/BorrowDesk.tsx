@@ -43,7 +43,10 @@ export default function BorrowDesk() {
     <div className="p-4 max-w-5xl mx-auto">
       <div className="flex items-center justify-between mb-4">
         <h1 className="text-2xl font-semibold">Borrow Desk</h1>
-        <Link to="/" className="px-3 py-2 border rounded">Back to Catalog</Link>
+        <div className="space-x-2">
+          <Link to="/reports" className="px-3 py-2 bg-purple-600 text-white rounded">Reports</Link>
+          <Link to="/" className="px-3 py-2 border rounded">Back to Catalog</Link>
+        </div>
       </div>
       {error && <div className="text-red-600 mb-3">{error}</div>}
       <div className="flex gap-2 mb-4">
